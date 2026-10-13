@@ -1,0 +1,23 @@
+dist/
+.qa/
+node_modules/
+*.log
+*.zip
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Preserve earlier designs locally, outside this current-design repository.
+/src/previous/
+/src/studio-v1/
+/src/assets/academic-ddvs*.webp
+/src/assets/gyanmirai-brand-sculpture-v2.webp
+/src/favicon.svg
+/design/*
+!/design/knowledge-amphitheatre-original.png
+!/design/product-captures/
+/design/product-captures/*
+!/design/product-captures/reporting-ddvs-light-2026-10-07.jpg

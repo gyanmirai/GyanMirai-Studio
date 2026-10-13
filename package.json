@@ -1,0 +1,11 @@
+{
+  "name": "gyanmirai-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/main.js && node --check src/proof-preview.js && node --check scripts/serve.mjs && node --check scripts/build.mjs"
+  }
+}

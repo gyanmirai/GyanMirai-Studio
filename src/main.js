@@ -1,0 +1,26 @@
+const menuToggle = document.querySelector(".menu-toggle");
+const navigation = document.querySelector("#navigation");
+document.querySelector(".header").classList.add("js-navigation");
+
+function closeMenu() {
+  menuToggle.setAttribute("aria-expanded", "false");
+}
+
+menuToggle.addEventListener("click", () => {
+  const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+});
+navigation.addEventListener("click", (event) => {
+  if (event.target.closest("a")) closeMenu();
+});
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    menuToggle.getAttribute("aria-expanded") === "true"
+  ) {
+    closeMenu();
+    menuToggle.focus();
+  }
+});
+const desktopQuery = window.matchMedia("(min-width: 761px)");
+desktopQuery.addEventListener("change", closeMenu);

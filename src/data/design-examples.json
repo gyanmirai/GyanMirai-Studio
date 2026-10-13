@@ -1,0 +1,28 @@
+{
+  "metrics": [
+    {
+      "value": "10,000",
+      "label": "Students",
+      "note": "Example adoption figure"
+    },
+    {
+      "value": "500",
+      "label": "Teachers",
+      "note": "Example adoption figure"
+    }
+  ],
+  "schools": [
+    {
+      "name": "Example school 01",
+      "board": "CBSE",
+      "location": "Gujarat",
+      "students": 700
+    },
+    {
+      "name": "Example school 02",
+      "board": "Gujarat Board",
+      "location": "Gujarat",
+      "students": 1200
+    }
+  ]
+}

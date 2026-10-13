@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: original brand hero artwork for GyanMirai school platform
+Primary request: an architectural paper sculpture of an open circular amphitheatre built from layered ivory book-like pages, with one vivid warm orange central sphere, representing people and knowledge connected.
+Scene/backdrop: seamless sculptural dark forest green studio background.
+Style/medium: premium tactile editorial 3D render, precise and elegant physical paper model.
+Composition/framing: landscape 3:2, centered subject filling frame, slightly elevated three-quarter camera view clearly showing the open amphitheatre and central sphere.
+Lighting/mood: soft studio daylight, subtle realistic shadows, calm intelligent warmth.
+Materials/textures: fine ivory paper edges and layered pages, tactile matte orange sphere, deep matte forest green backdrop.
+Constraints: artwork only, no typography, no letters, no UI, no people, no logos, no watermark.
+
+Generated with built-in image_gen tool.
+Visually inspected: layered ivory paper amphitheatre, centered warm orange sphere, dark forest green background, no typography or UI.
