@@ -8,7 +8,7 @@
 
 The current GyanMirai landing website presents an AI-powered school operating system for CBSE and Gujarat Board schools.
 It tells a practical story about admissions, academics, fees, staff, and communication through a warm editorial studio design.
-This private repository contains the current website, official brand assets, and the principles that guide future changes.
+This repository contains the current website, official brand assets, and the principles that guide future changes.
 
 [Design philosophy](docs/design-philosophy.md) · [Brand guidelines](docs/brand-guidelines.md) · [Asset provenance](docs/asset-provenance.md)
 
@@ -55,7 +55,28 @@ Stop any preview on the same port first, or select another port.
 
 The output is suitable for a static host that serves directory `index.html` files and root-relative assets.
 The bundled server is a local preview tool.
-Publishing this repository does not deploy the website or change the existing GyanMirai site.
+The GitHub Pages workflow deploys the website after changes reach `main`.
+It does not replace the existing GyanMirai website or its domain.
+
+## GitHub Pages
+
+The intended site address is [https://gyanmirai.github.io/GyanMirai-Studio/](https://gyanmirai.github.io/GyanMirai-Studio/).
+In repository Settings > Pages, select **GitHub Actions** as the publishing source.
+The workflow runs only on pushes to `main`, builds the public website, and deploys `dist/`.
+Feature branches and pull requests do not start deployment jobs.
+Deployment requires the repository to be public on GitHub Free.
+
+The build rewrites root-relative page and asset links for the Pages project path.
+To reproduce its output locally:
+
+```powershell
+npm run build -- --public --base-path /GyanMirai-Studio/
+```
+
+This output must be served under `/GyanMirai-Studio/` when checking it locally.
+Use the default build for the bundled preview server at `/`.
+The public build includes the homepage and contact page.
+It excludes the internal design-preview page, its example data, and its rendering script.
 
 ## Pages
 
@@ -110,5 +131,5 @@ Use `user/yvadher/<short-kebab-case-name>` branches based on `main` for subseque
 Merge changes to `main` only after explicit approval.
 
 Generated builds, archives, logs, environment files, and local QA material are ignored.
-No deployment workflow is included.
-The repository and brand assets remain private; no open-source licence is granted by this publication.
+The source and brand assets become publicly visible when repository visibility is changed to public.
+Public visibility does not grant an open-source licence or permission to reuse GyanMirai branding.

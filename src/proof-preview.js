@@ -6,7 +6,9 @@ const make = (tag, className, text) => {
   return element;
 };
 try {
-  const response = await fetch("/data/design-examples.json");
+  const response = await fetch(
+    new URL("./data/design-examples.json", import.meta.url),
+  );
   if (!response.ok) throw new Error("Example data unavailable");
   const data = await response.json();
   if (!Array.isArray(data.metrics) || !Array.isArray(data.schools))
